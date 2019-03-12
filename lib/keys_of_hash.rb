@@ -2,15 +2,12 @@ require 'pry'
 
 class Hash
   def keys_of(*arguments)
-    #binding.pry
-    arguments_array = []
-    arguments.each do |argument|
-      if Hash.keys.include?(argument)
-        arguments_array << argument
-        binding.pry
+    keys_array = []
+    self.each do |key, value|
+      if arguments.include?(value)
+        keys_array << key
       end
     end
+    keys_array
   end
 end
-
-#binding.pry

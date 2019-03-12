@@ -12,6 +12,7 @@ class Hash
     end
     keys_array
   end
+  binding.pry
 end
 
 binding.pry

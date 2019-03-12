@@ -11,3 +11,5 @@ class Hash
     keys_array
   end
 end
+
+binding.pry
